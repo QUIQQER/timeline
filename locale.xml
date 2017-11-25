@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+    <groups name="quiqqer/timeline" datatype="php,js">
+        <locale name="package.title">
+            <de><![CDATA[QUIQQER - Timeline]]></de>
+            <en><![CDATA[QUIQQER - Timeline]]></en>
+        </locale>
+        <locale name="package.description" html="true">
+            <de><![CDATA[
+                (...)
+            ]]></de>
+            <en><![CDATA[
+                (...)
+            ]]></en>
+        </locale>
+
+        <!-- timeline -->
+        <locale name="admin.types.timeline">
+            <de><![CDATA[Timeline]]></de>
+            <en><![CDATA[Timeline]]></en>
+            <pl><![CDATA[Linnia czasu]]></pl>
+        </locale>
+        <locale name="admin.types.timeline.desc">
+            <de><![CDATA[(...)]]></de>
+            <en><![CDATA[(...)]]></en>
+            <pl><![CDATA[(...)]]></pl>
+        </locale>
+
+    </groups>
+    <groups name="quiqqer/timeline" datatype="php">
+
+        <!-- timeline -->
+        <locale name="timeline.settings.title">
+            <de><![CDATA[Timeline: Einstellungen]]></de>
+            <en><![CDATA[Timeline: settings]]></en>
+            <pl><![CDATA[Timeline: ustawienia]]></pl>
+        </locale>
+
+        <!-- template / display -->
+        <locale name="timeline.display">
+            <de><![CDATA[Vorlage]]></de>
+            <en><![CDATA[Template]]></en>
+            <pl><![CDATA[Template]]></pl>
+        </locale>
+            <locale name="timeline.display.VerticalBothSides">
+                <de><![CDATA[Verticale Linnie mit Inhalt und Icon (Bild)]]></de>
+                <en><![CDATA[Vertical timeline wiht content and icon (image)]]></en>
+                <pl><![CDATA[Wertykalna linnia czasu z treścią i ikona (obrazkiem)]]></pl>
+            </locale>
+
+        <!-- show short -->
+        <locale name="timeline.showLinks">
+            <de><![CDATA[Links zu den Seiten anzeigen?]]></de>
+            <en><![CDATA[Show hyerlinks for each site?]]></en>
+            <pl><![CDATA[]]></pl>
+        </locale>
+
+    </groups>
+</locales>

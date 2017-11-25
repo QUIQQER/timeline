@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <types>
+
+        <!-- Liste -->
+        <type type="types/timeline" icon="fa fa-list">
+            <locale group="quiqqer/timeline" var="admin.types.timeline"/>
+            <desc>
+                <locale group="quiqqer/timeline" var="admin.types.timeline.desc"/>
+            </desc>
+
+            <!-- list attributes -->
+            <attributes>
+                <attribute default="VerticalBothSides">quiqqer.timeline.display</attribute>
+                <attribute default="1">quiqqer.timeline.showLinks</attribute>
+            </attributes>
+
+            <!-- list settings -->
+            <settings>
+                <category name="timeline-settings">
+                    <settings>
+                        <title>
+                            <locale group="quiqqer/timeline"
+                                    var="timeline.settings.title"/>
+                        </title>
+
+                        <select conf="quiqqer.timeline.display">
+                            <text>
+                                <locale group="quiqqer/timeline"
+                                        var="timeline.display"/>
+                            </text>
+                            <option value="VerticalBothSides">
+                                <locale group="quiqqer/timeline"
+                                        var="timeline.display.VerticalBothSides"/>
+                            </option>
+                        </select>
+
+                        <input conf="quiqqer.timeline.showLinks" type="checkbox">
+                            <text>
+                                <locale group="quiqqer/timeline"
+                                        var="timeline.showLinks"
+                                />
+                            </text>
+                        </input>
+
+                    </settings>
+                </category>
+            </settings>
+        </type>
+
+    </types>
+</site>
