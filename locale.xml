@@ -4,14 +4,18 @@
         <locale name="package.title">
             <de><![CDATA[QUIQQER - Timeline]]></de>
             <en><![CDATA[QUIQQER - Timeline]]></en>
+            <en><![CDATA[QUIQQER - Linia czasu]]></en>
         </locale>
         <locale name="package.description" html="true">
             <de><![CDATA[
-                (...)
+                Das Paket ermöglicht das einfache Erstellen von Timelines oder Roadmaps.
             ]]></de>
             <en><![CDATA[
-                (...)
+                The package allows you to easily create timelines or roadmaps.
             ]]></en>
+            <pl><![CDATA[
+                Za pomocą tego rozszerzenia możliwe jest szybie i proste dodanie do Twojego projekt dtzw. linni czasu albo "road map".
+            ]]></pl>
         </locale>
 
         <!-- timeline -->
@@ -21,9 +25,9 @@
             <pl><![CDATA[Linnia czasu]]></pl>
         </locale>
         <locale name="admin.types.timeline.desc">
-            <de><![CDATA[(...)]]></de>
-            <en><![CDATA[(...)]]></en>
-            <pl><![CDATA[(...)]]></pl>
+            <de><![CDATA[Die Seite wird alle ihre Unterseite in Form von einer Timeline auflisten. Um gutes Ergebnis zu bekommen ist es notwendig, jede Unterseite mit Titel, Kurzbeschreibung und einer Icon bzw. Seitenbild zu versehen.]]></de>
+            <en><![CDATA[This site type will list all of its subpages in the form of a timline. It is necessary to add a title, short description and an icon or page image to each subpage.]]></en>
+            <pl><![CDATA[Ta strona wylistuje wszystkie jej podstrony w formie tzw. linni czasowej. Żeby uzyskać najlepszy efekt, musisz ustawić każdej stronie tytuł, krótki opis oraz ikonę lub obrazek.]]></pl>
         </locale>
 
     </groups>
@@ -60,6 +64,13 @@
             <de><![CDATA[STEP]]></de>
             <en><![CDATA[STEP]]></en>
             <pl><![CDATA[STEP]]></pl>
+        </locale>
+
+        <!-- more button -->
+        <locale name="timeline.more">
+            <de><![CDATA[mehr]]></de>
+            <en><![CDATA[more]]></en>
+            <pl><![CDATA[więcej]]></pl>
         </locale>
 
     </groups>

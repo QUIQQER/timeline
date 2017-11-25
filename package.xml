@@ -1,0 +1,33 @@
+<quiqqer>
+    <package>
+        <title>
+            <locale group="quiqqer/timeline" var="package.title"/>
+        </title>
+
+        <description>
+            <locale group="quiqqer/timeline" var="package.description"/>
+        </description>
+
+        <image src="URL_OPT_DIR/quiqqer/timeline/bin/images/Logo.jpg"/>
+
+        <preview>
+            <image src="URL_OPT_DIR/quiqqer/timeline/bin/images/preview/1.jpg"/>
+            <image src="URL_OPT_DIR/quiqqer/timeline/bin/images/preview/2.jpg"/>
+        </preview>
+
+
+        <support>
+            <email>support@pcsg.de</email>
+            <forum>https://community.quiqqer.com</forum>
+            <source>https://dev.quiqqer.com/quiqqer/timeline</source>
+            <issues>https://dev.quiqqer.com/quiqqer/timeline/issues</issues>
+            <wiki>https://dev.quiqqer.com/quiqqer/timeline/wikis/home</wiki>
+        </support>
+
+        <copyright>
+            <name><![CDATA[PCSG - Computer & Internet Service OHG]]></name>
+            <license>PCSG QL-1.0</license>
+            <license>CC BY-NC-SA 4.0</license>
+        </copyright>
+    </package>
+</quiqqer>
