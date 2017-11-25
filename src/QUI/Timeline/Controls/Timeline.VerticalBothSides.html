@@ -1,0 +1,86 @@
+
+{if $this->getAttribute('showTitle') && $this->getAttribute('frontendTitle')}
+<header class="control-header">
+    <h1>{$this->getAttribute('frontendTitle')}</h1>
+</header>
+{/if}
+
+{if $this->getAttribute('content') != ""}
+<div class="control-content">
+    {$this->getAttribute('content')}
+</div>
+{/if}
+
+<section itemscope itemtype="{$this->getAttribute('itemtype')}"
+         class="timeline control-template"
+>
+    <link property="mainEntityOfPage" href="{url site=$Site}">
+    <div class="timeline-container">
+
+        {assign var=counter value=1}
+
+        {foreach from=$children item=Child}
+        {assign var=_Child value=$Child->load()}
+        <article itemscope
+                 itemprop="itemListElement"
+                 itemtype="{$this->getAttribute('child-itemtype')}"
+                 class="timeline-entry"
+        >
+
+            <!-- Entry Icon -->
+            <div class="timeline-entry-icon">
+                {if $Child->getAttribute('image_site')}
+                <div class="timeline-entry-icon-wrapper">
+                    {image src=$Child->getAttribute('image_site') width="500" type="resize"
+                    title="{$Child->getAttribute('title')}"}
+                </div>
+                {/if}
+            </div>
+
+            <!-- Middle line -->
+            <div class="timeline-entry-line">
+                <div class="timeline-entry-line-caption">
+                    <span class="timeline-entry-line-caption-number">
+                        {if $counter < 10}0{/if}{$counter}
+                    </span>
+                    <span class="timeline-entry-line-caption-text">
+                        {locale group="quiqqer/timeline"
+                                var="timeline.verticalBothSides.counterText"}
+                    </span>
+                </div>
+                <div class="timeline-entry-line-dots"></div>
+            </div>
+
+            <!-- Entry content -->
+            <div class="timeline-entry-desc">
+                <meta itemprop="position" content="{$counter}"/>
+                <header>
+                    {if $showLinks}
+                    <a itemprop="url" href="{url site=$Child}"
+                       class="timeline-entry-desc-header-link">
+                    {/if}
+
+                        <h2>{$Child->getAttribute('title')}</h2>
+
+                    {if $showLinks}
+                    </a>
+                    {/if}
+                </header>
+
+                <p>
+                    {$Child->getAttribute('short')|nl2br}
+                    {if $showLinks}
+                    <a itemprop="url" href="{url site=$Child}"
+                       class="timeline-entry-desc-link">
+                        {locale group="quiqqer/sitetypes" value="list.more"}
+                    </a>
+                    {/if}
+                </p>
+            </div>
+
+        </article>
+        {assign var=counter value=$counter+1}
+        {/foreach}
+    </div>
+
+</section>

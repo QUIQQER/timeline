@@ -55,5 +55,12 @@
             <pl><![CDATA[]]></pl>
         </locale>
 
+        <!-- counter text -->
+        <locale name="timeline.verticalBothSides.counterText">
+            <de><![CDATA[STEP]]></de>
+            <en><![CDATA[STEP]]></en>
+            <pl><![CDATA[STEP]]></pl>
+        </locale>
+
     </groups>
 </locales>

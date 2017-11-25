@@ -1,4 +1,3 @@
-![QUIQQER EventCalendar](bin/images/Readme.jpg)
 
 QUIQQER Timeline
 ========
@@ -11,7 +10,8 @@ Package Name:
 
 Features
 --------
-- (...)
+- Timline template with content and icon (image)
+- Responsive
 
 
 Installation

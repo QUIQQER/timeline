@@ -3,7 +3,7 @@
     <types>
 
         <!-- Liste -->
-        <type type="types/timeline" icon="fa fa-list">
+        <type type="types/timeline" icon="fa fa-code-fork">
             <locale group="quiqqer/timeline" var="admin.types.timeline"/>
             <desc>
                 <locale group="quiqqer/timeline" var="admin.types.timeline.desc"/>

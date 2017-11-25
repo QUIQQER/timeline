@@ -25,7 +25,8 @@ class Timeline extends QUI\Control
     {
         // default options
         $this->setAttributes(array(
-            'class'           => 'timeline',
+            'nodeName'        => 'section',
+            'class'           => 'timeline-section',
             'order'           => 'c_date ASC',
             'parentInputList' => false, //todo später für brick
             'showLinks'       => true,
@@ -34,7 +35,9 @@ class Timeline extends QUI\Control
             'displayTemplate' => false,
             // Custom children template css (path to css file); overwrites "display"
             'displayCss'      => false,
-            'nodeName'        => 'section',
+            'itemtype'        => 'http://schema.org/ItemList',
+            'child-itemtype'  => 'https://schema.org/ListItem',
+            'child-itemprop'  => 'itemListElement'
         ));
 
         parent::__construct($attributes);
@@ -101,8 +104,8 @@ class Timeline extends QUI\Control
 
 
         // template
-        $css      = dirname(__FILE__) . $this->getAttribute('display') . '.css';
-        $template = dirname(__FILE__) . $this->getAttribute('display') . '.template';
+        $css      = dirname(__FILE__) . '/Timeline.' . $this->getAttribute('display') . '.css';
+        $template = dirname(__FILE__) . '/Timeline.' . $this->getAttribute('display') . '.html';
 
         $this->addCSSFile($css);
 
