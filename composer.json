@@ -2,7 +2,7 @@
     "name": "quiqqer\/timeline",
     "type": "quiqqer-module",
     "description": "This package contains some templates to simply create time lines and road maps.",
-    "version": "dev-master",
+    "version": "dev-dev",
     "license": "",
     "authors": [
         {
