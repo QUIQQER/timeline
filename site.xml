@@ -13,6 +13,7 @@
             <attributes>
                 <attribute default="VerticalBothSides">quiqqer.timeline.display</attribute>
                 <attribute default="1">quiqqer.timeline.showLinks</attribute>
+                <attribute default="original">quiqqer.timeline.imageFit</attribute>
             </attributes>
 
             <!-- list settings -->
@@ -42,6 +43,26 @@
                                 />
                             </text>
                         </input>
+
+                        <select conf="quiqqer.timeline.imageFit">
+                            <text>
+                                <locale group="quiqqer/timeline"
+                                        var="timeline.imageFit"/>
+                            </text>
+                            <description>
+                                <locale group="quiqqer/timeline"
+                                        var="timeline.imageFit.desc"/>
+                            </description>
+
+                            <option value="original">
+                                <locale group="quiqqer/timeline"
+                                        var="timeline.imageFit.original"/>
+                            </option>
+                            <option value="cover">
+                                <locale group="quiqqer/timeline"
+                                        var="timeline.imageFit.cover"/>
+                            </option>
+                        </select>
 
                     </settings>
                 </category>

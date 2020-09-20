@@ -26,6 +26,10 @@
                  itemtype="{$this->getAttribute('child-itemtype')}"
                  class="timeline-entry"
         >
+            {assign var=imageFitClass value=''}
+            {if $imageFit == 'cover'}
+                {assign var=imageFitClass value='image-fit-cover'}
+            {/if}
 
             <!-- Entry Icon -->
             <div class="timeline-entry-icon">
@@ -33,7 +37,7 @@
                 <div class="timeline-entry-icon-wrapper">
                     {image src=$Child->getAttribute('image_site') max-width="500" max-height="500" type="resize"
                     title="{$Child->getAttribute('title')}"
-                    class="fill-image"}
+                    class="$imageFitClass"}
                 </div>
                 {/if}
             </div>

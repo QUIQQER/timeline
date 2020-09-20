@@ -62,7 +62,7 @@
     justify-content: center;
 }
 
-.timeline-entry-icon-wrapper picture img.fill-image {
+.timeline-entry-icon-wrapper picture img.image-fit-cover {
     object-fit: cover;
     width: 100%;
     height: 100%;

@@ -52,11 +52,29 @@
                 <pl><![CDATA[Wertykalna linnia czasu z treścią i ikona (obrazkiem)]]></pl>
             </locale>
 
-        <!-- show short -->
+        <!-- show url -->
         <locale name="timeline.showLinks">
             <de><![CDATA[Links zu den Seiten anzeigen?]]></de>
             <en><![CDATA[Show hyerlinks for each site?]]></en>
             <pl><![CDATA[]]></pl>
+        </locale>
+
+        <!-- image fit -->
+        <locale name="timeline.imageFit">
+            <de><![CDATA[Bild]]></de>
+            <en><![CDATA[Image]]></en>
+        </locale>
+        <locale name="timeline.imageFit.desc">
+            <de><![CDATA[Die Einstellung bezieht sich nur auf die Bilder, nicht auf die Icons]]></de>
+            <en><![CDATA[The setting refers only to the images, not to the icons]]></en>
+        </locale>
+        <locale name="timeline.imageFit.original">
+            <de><![CDATA[Original]]></de>
+            <en><![CDATA[Original]]></en>
+        </locale>
+        <locale name="timeline.imageFit.cover">
+            <de><![CDATA[Decken (Bild kann gestreckt werden)]]></de>
+            <en><![CDATA[Cover (image can be stretched)]]></en>
         </locale>
 
         <!-- counter text -->

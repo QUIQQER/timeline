@@ -30,6 +30,7 @@ class Timeline extends QUI\Control
             'order'           => 'c_date ASC',
             'parentInputList' => false, //todo später für brick
             'showLinks'       => true,
+            'imageFit'        => 'original', // original, cover
             'display'         => 'VerticalBothSides',
             // Custom children template (path to html file); overwrites "display"
             'displayTemplate' => false,
@@ -86,7 +87,8 @@ class Timeline extends QUI\Control
             'Site'      => $Site,
             'Project'   => $this->getProject(),
             'children'  => $children,
-            'showLinks' => $this->getAttribute('showLinks')
+            'showLinks' => $this->getAttribute('showLinks'),
+            'imageFit' => $this->getAttribute('imageFit')
         ));
 
         // load custom template (if set)

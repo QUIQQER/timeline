@@ -9,7 +9,8 @@ $Timeline = new QUI\Timeline\Controls\Timeline(array(
     'showLinks'       => $Site->getAttribute('quiqqer.timeline.showLinks'),
     'itemtype'       => 'http://schema.org/ItemList',
     'child-itemtype' => 'http://schema.org/ListItem',
-    'display'        => $Site->getAttribute('quiqqer.timeline.display')
+    'display'        => $Site->getAttribute('quiqqer.timeline.display'),
+    'imageFit' => $Site->getAttribute('quiqqer.timeline.imageFit')
 ));
 
 $Engine->assign(array(
