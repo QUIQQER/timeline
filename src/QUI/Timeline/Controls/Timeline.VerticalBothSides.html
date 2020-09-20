@@ -31,8 +31,9 @@
             <div class="timeline-entry-icon">
                 {if $Child->getAttribute('image_site')}
                 <div class="timeline-entry-icon-wrapper">
-                    {image src=$Child->getAttribute('image_site') width="500" type="resize"
-                    title="{$Child->getAttribute('title')}"}
+                    {image src=$Child->getAttribute('image_site') max-width="500" max-height="500" type="resize"
+                    title="{$Child->getAttribute('title')}"
+                    class="fill-image"}
                 </div>
                 {/if}
             </div>

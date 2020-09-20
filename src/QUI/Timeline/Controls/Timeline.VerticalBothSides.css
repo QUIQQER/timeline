@@ -33,7 +33,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    padding: 20px;
     position: relative;
     margin-top: 12px;
 }
@@ -45,11 +44,29 @@
     top: calc(50% - 20px);
     background: none;
     width: 0;
-    height: 0px;
+    height: 0;
     border-right: none;
     border-bottom: 20px solid transparent;
     border-top: 20px solid transparent;
     border-left: 30px solid #aaa;
+}
+
+/* image */
+.timeline-entry-icon-wrapper picture {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-entry-icon-wrapper picture img.fill-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
 }
 
 /* line - middle */
